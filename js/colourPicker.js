@@ -7,8 +7,8 @@ titulo.textContent = "Colour Picker";
 const btn_1 = document.createElement("button");
 const btn_2 = document.createElement("button");
 
-btn_1.innerText = "Mostrar Paleta";
-btn_2.innerText = "Ocultar Paleta";
+btn_1.innerText = "Show palette";
+btn_2.innerText = "Hide palette";
 
 btn_1.classList.add("btn_primario");
 btn_2.classList.add("btn_primario");
@@ -29,7 +29,7 @@ function desplegarPaleta(){
         <div class="arrow arrow-three"></div>
     </div>
     <input type="color" id="favcolor" name="favcolor">
-    <button id="btn_copiar" class="btn_primario" onClick="copiarAlPortapapeles()">Copiar código HEX del color</button>
+    <button id="btn_copiar" class="btn_primario" onClick="copiarAlPortapapeles()">Copy HEX code</button>
     `
     paletaContainer.appendChild(btn_2);
 }
@@ -43,12 +43,12 @@ function copiarAlPortapapeles() {
     navigator.clipboard
         .writeText(document.getElementById('favcolor').value)
         .then(
-            success => labelCopiado(), err => console.log("error copying text")
+            success => labelCopiado(), err => console.log("error copying code")
         );
 }
 
 function labelCopiado(){
-    btn_copiar.innerText = "¡Copiado!";
+    btn_copiar.innerText = "Copied!";
     btn_copiar.classList.add("btn_copiado");
     
 }
