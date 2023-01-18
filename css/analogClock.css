@@ -1,0 +1,25 @@
+.analog_clock{
+    border: solid 3px #25d469;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #25d469;
+    padding: 30px;
+}
+ .icon {
+    width: 32px;
+    height: 32px;
+    fill: #ccc;
+  }
+  
+  .icon.clock {
+    width: 320px;
+    height: 320px;
+  }
+  
+  .clock {
+    display: table;
+    margin: 0 auto;
+  }
+
+
