@@ -19,7 +19,7 @@ I hope you like this fun staff!
 
 ## Demo
 
-Insert gif or link to demo
+https://matiasdavidblanco.github.io/My-fun-things-whit-JavaScript/
 
 
 ## Tech Stack
