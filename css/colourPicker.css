@@ -1,7 +1,7 @@
 
 
 .colour_picker{
-    border: solid 3px #25d469;
+    /* border: solid 3px #25d469; */
     display: flex;
     flex-direction: column;
     align-items: center;
