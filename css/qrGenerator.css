@@ -1,0 +1,68 @@
+
+.qr_generator{
+    background-color: aliceblue;
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.qr_generator *{
+    padding: 10px;
+    border-radius: 10px;
+    
+}
+
+.qr_container{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+
+  
+}
+.inactive{
+    display:none;
+}
+
+.qr_img{
+    border:solid black 1px;
+    
+}
+
+.btn_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    padding: 0px;
+}
+
+.btn_container *{
+   margin-top: 10px;
+   border: none;
+   background-color: rgb(128, 128, 228);
+   color: white;
+}
+
+.btn_container *:hover{
+    box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.75);
+}
+
+.qr_input{
+    border: solid 1px gainsboro;
+    margin-bottom: 10px;
+}
+
+.qr_btn{
+    border: none;
+    background-color: rgb(128, 128, 228);
+    color: white;
+}
+.qr_btn:hover{
+    box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.75);
+}

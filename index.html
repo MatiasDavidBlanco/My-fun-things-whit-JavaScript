@@ -5,28 +5,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My fun things whit JavaScript</title>
+    <title>Funny things whit JavaScript</title>
     <link rel="shortcut icon" href="./img/js.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/colourPicker.css">
     <link rel="stylesheet" href="./css/analogClock.css">
     <link rel="stylesheet" href="./css/digitalClock.css">
+    <link rel="stylesheet" href="./css/qrGenerator.css">
 
 
 
 </head>
 
 <body>
-    <h1>My fun things whit JavaScript</h1>
+    <h1>Funny things whit JavaScript</h1>
     <div class="wraper">
         <div id="one" class="colour_picker"></div>
         <div id="two" class="analog_clock"></div>
         <div id="three" class="digital_clock"></div>
+        <div id="four" class="qr_generator">
+            <h1 class="qr_title">QR Code Generator</h1>
+            <p class="qr_p">Paste a url or enter text to create QR code</p>
+            <input class="qr_input" type="text" spellcheck="false" placeholder="Enter text o url">
+            <button class="qr_btn">Generate QR Code</button>
+            <div class="qr_container">
+                <img class="qr_img" src="" alt="">
+                <div class="btn_container">
+                    <button>Download</button>
+                    <button>Share</button>
+                </div>
+                
+            </div>
+        </div>
 
     </div>
     <script src="./js/colourPicker.js"></script>
     <script src="./js/analogClock.js"></script>
     <script src="./js/digitalClock.js"></script>
+    <script src="./js/qrGenerator.js"></script>
+
+    <div>
+
+
+    </div>
+
+
 </body>
+
 
 </html>

@@ -1,5 +1,5 @@
 
-# My fun things whit JavaScript 
+# Funny things whit JavaScript 
 
 I have created this repository with the purpose of collecting some crazy ideas that came to my mind to do whith JavaScript, CSS and HTML.
 

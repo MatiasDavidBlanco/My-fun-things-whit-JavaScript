@@ -11,7 +11,8 @@
 }
 
 .marco_reloj {
-    background-color: rgb(208, 180, 72);
+    background-color: #242323;
+    width: 300px;
     width: 300px;
     text-align: center;
     border: solid white 15px;
@@ -25,7 +26,7 @@
 
 .marco_reloj h1 {
     font-family: 'Audiowide', cursive;
-    color: #514343;
+    color: #de2c2c;
     border: solid black 1px;
     padding: 20px;
     border-radius: 5px;
