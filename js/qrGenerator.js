@@ -44,11 +44,10 @@ btn_share.addEventListener("click", (event) => {
     navigator
       .share({
         // Defino un título para la ventana de compartir
-        title: "Comparte Esta Página en Tu Plataforma Favorita",
+        title: "Comparte este QR en tu plataforma favorita",
  
         // Detecto la URL actual de la página 
-        url:
-            window.location.href
+        url: `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${input.value}`
       })
  
       // Mensaje en Consola cuando se presiona el botón de compartir 
