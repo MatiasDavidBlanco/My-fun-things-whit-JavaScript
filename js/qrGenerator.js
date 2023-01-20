@@ -42,11 +42,11 @@ btn_download.addEventListener("click", async () => {
 
 
 btn_share.addEventListener("click", async (event) => {
-    
+
     const url = `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${input.value}`;
     const image = await fetch(url);
     const imageBlob = await image.blob();
-    const file = new File([imageBlob],"QR.png",{type:"image/png"});
+    const file = new File([imageBlob], "QR.png", { type: "image/png" });
 
     // Verifico si el navegador tiene soporte para API SHARE
     if ("share" in navigator) {
@@ -54,7 +54,7 @@ btn_share.addEventListener("click", async (event) => {
             .share({
                 // Defino un título para la ventana de compartir
                 title: "Comparte este QR en tu plataforma favorita",
-                files:[file]               
+                files: [file]
             })
 
             // Mensaje en Consola cuando se presiona el botón de compartir 

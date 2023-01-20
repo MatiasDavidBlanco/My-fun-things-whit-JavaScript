@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Funny things whit JavaScript</title>
     <link rel="shortcut icon" href="./img/js.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/f092dd9d6c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/colourPicker.css">
     <link rel="stylesheet" href="./css/analogClock.css">
@@ -24,17 +25,17 @@
         <div id="two" class="analog_clock"></div>
         <div id="three" class="digital_clock"></div>
         <div id="four" class="qr_generator">
-            <h1 class="qr_title">QR Code Generator</h1>
+            <h1 class="qr_title">QR Code Generator <i class="fa-solid fa-qrcode"></i></h1>
             <p class="qr_p">Paste a url or enter text to create QR code</p>
             <input class="qr_input" type="text" spellcheck="false" placeholder="Enter text o url">
-            <button class="qr_btn">Generate QR Code</button>
+            <button class="btn qr_btn">Generate QR Code</button>
             <div class="qr_container">
                 <img class="qr_img" src="" alt="">
                 <div class="btn_container">
-                    <a id="btn_download" download="">Download</a>
-                    <a id="btn_share">Share</a>
+                    <a class="btn" id="btn_download" download="">Download</a>
+                    <a class="btn" id="btn_share">Share</a>
                 </div>
-                
+
             </div>
         </div>
 
