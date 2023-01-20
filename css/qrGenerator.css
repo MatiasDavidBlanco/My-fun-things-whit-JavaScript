@@ -43,6 +43,7 @@
    border: none;
    background-color: rgb(128, 128, 228);
    color: white;
+   text-align: center;
 }
 
 .btn_container *:hover{
@@ -54,6 +55,13 @@
 .qr_input{
     border: solid 1px gainsboro;
     margin-bottom: 10px;
+    outline: none;
+}
+
+.alerta{
+    box-shadow: 0px 0px 10px 0px rgba(252,24,24,0.75);
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(252,24,24,0.75);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(252,24,24,0.75);
 }
 
 .qr_btn{
