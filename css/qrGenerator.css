@@ -44,6 +44,8 @@
    background-color: rgb(128, 128, 228);
    color: white;
    text-align: center;
+   text-decoration: none;
+
 }
 
 .btn_container *:hover{
