@@ -7,9 +7,11 @@
   font-family: "Alegreya Sans", sans-serif;
 }
 
+html{
+  scroll-behavior: smooth;
+}
 body{
-    background: #343541;
-
+    background: #343541
 }
 body>h1{
     color: #f8f8f8;
@@ -20,9 +22,13 @@ body>h1{
   display: flex;
   align-items: flex-start;
   flex-wrap: wrap;
-  flex-direction: row;
+  flex-direction: column;
   padding: 50px;
   justify-content:space-around;
+  align-items: center;
 }
 
+.section{
+  min-height: 100vh;
+}
 

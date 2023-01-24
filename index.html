@@ -12,11 +12,11 @@
         integrity="sha512-+mlclc5Q/eHs49oIOCxnnENudJWuNqX5AogCiqRBgKnpoplPzETg2fkgBFVC6WYUVxYYljuxPNG8RE7yBy1K+g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/hamburger_menu.css">
     <link rel="stylesheet" href="./css/colourPicker.css">
     <link rel="stylesheet" href="./css/analogClock.css">
     <link rel="stylesheet" href="./css/digitalClock.css">
     <link rel="stylesheet" href="./css/qrGenerator.css">
+    <link rel="stylesheet" href="./css/hamburger_menu.css">
 
 
 
@@ -26,35 +26,37 @@
     <h1>Funny things whit JavaScript</h1>
     <div class="wraper">
         <div id="one" class="hamburger_menu">
-            <button id="hamburger_btn" class="panel_btn hamburger hamburger--collapse" type="button">
+            <button id="hamburger_btn" class="panel_btn hamburger hamburger--3dxy" type="button">
                 <span class="hamburger-box">
                     <span class="hamburger-inner"></span>
                 </span>
             </button>
             <aside class="panel">
                 <nav class="menu">
-                    <a href="">Project 1</a>
-                    <a href="">Project 2</a>
-                    <a href="">Project 3</a>
-                    <a href="">Project 4</a>
+                    <h1>Project's List</h1>
+                    <a onclick="cerrarMenu()" href="#two">Colour Picker</a>
+                    <a onclick="cerrarMenu()" href="#three">Analog clock</a>
+                    <a onclick="cerrarMenu()" href="#four">Digital clock</a>
+                    <a onclick="cerrarMenu()" href="#five">QR Code Generator</a>
                 </nav>
             </aside>
         </div>
-        <div id="two" class="colour_picker"></div>
-        <div id="three" class="analog_clock"></div>
-        <div id="four" class="digital_clock"></div>
-        <div id="five" class="qr_generator">
-            <h1 class="qr_title">QR Code Generator <i class="fa-solid fa-qrcode"></i></h1>
-            <p class="qr_p">Paste a url or enter text to create QR code</p>
-            <input class="qr_input" type="text" spellcheck="false" placeholder="Enter text o url">
-            <button class="btn qr_btn">Generate QR Code</button>
-            <div class="qr_container">
-                <img class="qr_img" src="" alt="">
-                <div class="btn_container">
-                    <a class="btn" id="btn_download" download="">Download</a>
-                    <a class="btn" id="btn_share">Share</a>
+        <div id="two" class="section colour_picker"></div>
+        <div id="three" class="section analog_clock"></div>
+        <div id="four" class="section digital_clock"></div>
+        <div id="five" class="section">
+            <div class="qr_generator">
+                <h1 class="qr_title">QR Code Generator <i class="fa-solid fa-qrcode"></i></h1>
+                <p class="qr_p">Paste a url or enter text to create QR code</p>
+                <input class="qr_input" type="text" spellcheck="false" placeholder="Enter text o url">
+                <button class="btn qr_btn">Generate QR Code</button>
+                <div class="qr_container">
+                    <img class="qr_img" src="" alt="">
+                    <div class="btn_container">
+                        <a class="btn" id="btn_download" download="">Download</a>
+                        <a class="btn" id="btn_share">Share</a>
+                    </div>
                 </div>
-
             </div>
         </div>
 

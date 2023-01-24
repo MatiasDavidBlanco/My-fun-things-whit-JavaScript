@@ -13,7 +13,6 @@
 .marco_reloj {
     background-color: #242323;
     width: 300px;
-    width: 300px;
     text-align: center;
     border: solid white 15px;
     border-radius: 8px;
@@ -58,7 +57,7 @@
     background-color: #cf5141;
     position: absolute;
     border-radius: 8px 8px 0px 0px;
-    top: 110px;
+    top: 109px;
     width: 70px;
     height: 17px;
     box-shadow: 3px 0px 0px 1px rgb(0 0 0 / 75%);

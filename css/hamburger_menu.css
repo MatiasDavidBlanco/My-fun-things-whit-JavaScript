@@ -1,39 +1,42 @@
-.panel_btn{
+.panel_btn {
     position: fixed;
     right: 1vh;
     bottom: 1vh;
     z-index: 999;
+    border-radius: 50px;
+    background-color: #25d4688e;
 }
-
-.panel{
-    position:fixed;
+.panel {
+    position: fixed;
     z-index: 998;
     background-color: rgba(71, 69, 69, 0.815);
-    width: 100%;
-    top:0;
-    bottom:0;
-    left:0;
+    width: 30%;
+    top: 0;
+    bottom: 0;
+    left: 0;
     right: 0;
-    transition:transform 0.3s ease;
-    transform: translate(0,-100%);
-    
-}
-.panel.is-active{
-    transform: translate(0,0);
+    transition: transform 0.3s ease;
+    transform: translate(-100%, 0);
+
 }
 
-.menu{
-    width: inherit;
+.panel.is-active {
+    transform: translate(0, 0);
+}
+
+.menu {
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     text-align: center;
+
 }
 
-.menu a{
+.menu a {
     width: inherit;
-    padding: 2em;
+    padding: 0.5em;
     display: block;
     font-size: 25px;
     text-decoration: none;
@@ -41,8 +44,15 @@
     color: rgb(255, 255, 255);
 }
 
-.menu a:hover{
+.menu h1{
+    margin: 40px 0px 40px 0px;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+}
+
+
+.menu a:hover {
     font-weight: bold;
-    background-color: aqua;
-    
+    background-color: #25d469;
+
 }
