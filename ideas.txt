@@ -4,5 +4,23 @@ Proyectos a realizar:
 3-Fondo con particulas dinámicas
 4-Drag and drop
 5-Objeto 3d
-6-QR generator https://www.youtube.com/watch?v=pv5K28zVepE
+6-QR generator 
 7-voz a Audio
+
+
+Mismo idioma todo
+usar 220 caracteres de headline con skills no mas de 160 Ej: Frontend developer expirienced 
+En cada experiencia laboral poner puntos describiendo las tareas realizadas y que habilidades desarrollaste
+En about ser personal cuanta tu historia muestra u personalidad
+    5 parrafos
+    1- El gancho (captar la atención)
+    2- Tu pasado, 
+    3- presente
+    4- futuro aspirado
+    3- Skills: lista
+
+Headline y about deben coincidir con la experiencia. Poner frontend developer
+
+direccion debajo de headline debe ser la ciudad más grande cercana MENDOZA AREA METROPOLITANA
+
+No poner logo de empresa vacio. Crear empresa y poner logo y ponerte como empleado. freelance

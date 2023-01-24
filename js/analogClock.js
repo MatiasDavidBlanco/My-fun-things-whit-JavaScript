@@ -27,7 +27,7 @@ const svg = `
     </g>
  </svg>
  `
-const clockContainer1 = document.getElementById("two");
+const clockContainer1 = document.getElementById("three");
 clockContainer1.innerHTML = `<h1>Analog clock</h1> ${svg}`;
 
 setInterval(encenderReloj,1000);

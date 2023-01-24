@@ -8,7 +8,11 @@
     <title>Funny things whit JavaScript</title>
     <link rel="shortcut icon" href="./img/js.png" type="image/x-icon">
     <script src="https://kit.fontawesome.com/f092dd9d6c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.min.css"
+        integrity="sha512-+mlclc5Q/eHs49oIOCxnnENudJWuNqX5AogCiqRBgKnpoplPzETg2fkgBFVC6WYUVxYYljuxPNG8RE7yBy1K+g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/hamburger_menu.css">
     <link rel="stylesheet" href="./css/colourPicker.css">
     <link rel="stylesheet" href="./css/analogClock.css">
     <link rel="stylesheet" href="./css/digitalClock.css">
@@ -21,10 +25,25 @@
 <body>
     <h1>Funny things whit JavaScript</h1>
     <div class="wraper">
-        <div id="one" class="colour_picker"></div>
-        <div id="two" class="analog_clock"></div>
-        <div id="three" class="digital_clock"></div>
-        <div id="four" class="qr_generator">
+        <div id="one" class="hamburger_menu">
+            <button id="hamburger_btn" class="panel_btn hamburger hamburger--collapse" type="button">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+            <aside class="panel">
+                <nav class="menu">
+                    <a href="">Project 1</a>
+                    <a href="">Project 2</a>
+                    <a href="">Project 3</a>
+                    <a href="">Project 4</a>
+                </nav>
+            </aside>
+        </div>
+        <div id="two" class="colour_picker"></div>
+        <div id="three" class="analog_clock"></div>
+        <div id="four" class="digital_clock"></div>
+        <div id="five" class="qr_generator">
             <h1 class="qr_title">QR Code Generator <i class="fa-solid fa-qrcode"></i></h1>
             <p class="qr_p">Paste a url or enter text to create QR code</p>
             <input class="qr_input" type="text" spellcheck="false" placeholder="Enter text o url">
@@ -40,6 +59,7 @@
         </div>
 
     </div>
+    <script src="./js/hamburger_menu.js"></script>
     <script src="./js/colourPicker.js"></script>
     <script src="./js/analogClock.js"></script>
     <script src="./js/digitalClock.js"></script>

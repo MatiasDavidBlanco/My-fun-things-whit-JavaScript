@@ -1,6 +1,6 @@
 // Interacción 1 Colour picker
 
-const paletaContainer = document.querySelector("#one");
+const paletaContainer = document.querySelector("#two");
 
 const titulo = document.createElement("h1");
 titulo.textContent = "Colour Picker";
@@ -13,7 +13,7 @@ btn_2.innerText = "Hide palette";
 btn_1.classList.add("btn_primario");
 btn_2.classList.add("btn_primario");
 
-btn_1.addEventListener("click", desplegarPaleta);
+btn_1.addEventListener("click",desplegarPaleta);
 btn_2.addEventListener("click",ocultarPaleta);
 
 paletaContainer.appendChild(titulo);
