@@ -59,18 +59,41 @@
                 </div>
             </div>
         </div>
+        <div id="six" class="section texto-voz">
+            <h1 class="">Voice Generator <i class="fa-regular fa-comment"></i></h1>
+            <h2>Enter the text you wish to speak:</h2>
+            <textarea id="text-input" rows="4" cols="50" placeholder="Ingrese el texto aqui"></textarea>
+            <h2>Choose a voice:</h2>
+            <select id="voces" name="voces_lista">
+            </select>
+            <br>
+            <button id="btn_generate_voice">Generate Voice</button>
+            <div><img src="./img/onda_sonora.webp" width="400" height="100" alt="" srcset=""></div>
 
-    </div>
-    <script src="./js/hamburger_menu.js"></script>
-    <script src="./js/colourPicker.js"></script>
-    <script src="./js/analogClock.js"></script>
-    <script src="./js/digitalClock.js"></script>
-    <script src="./js/qrGenerator.js"></script>
+            <label for="rate">Rate</label><input type="range" min="0.5" max="2" value="1" step="0.1" id="rate">
+            <div class="rate-value">1</div>
+            <div class="clearfix"></div>
+            
+            <label for="pitch">Pitch</label><input type="range" min="0" max="2" value="1" step="0.1" id="pitch">
+            <div class="pitch-value">1</div>
+            <div class="clearfix"></div>
+            <div>
+                <button>Download Voice</button>
+                <button>Share Voice</button>
+            </div>
+        </div>
+      
+        <script src="./js/hamburger_menu.js"></script>
+        <script src="./js/colourPicker.js"></script>
+        <script src="./js/analogClock.js"></script>
+        <script src="./js/digitalClock.js"></script>
+        <script src="./js/qrGenerator.js"></script>
+        <script src="./js/texto_voz.js"></script>
 
-    <div>
+        <div>
 
 
-    </div>
+        </div>
 
 
 </body>

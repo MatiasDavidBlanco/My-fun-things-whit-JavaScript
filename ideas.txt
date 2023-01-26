@@ -1,11 +1,11 @@
 Proyectos a realizar:
-1-Color Picker
-2-Reloj Analógico
+1-Color Picker*
+2-Reloj Analógico*
 3-Fondo con particulas dinámicas
 4-Drag and drop
 5-Objeto 3d
-6-QR generator 
-7-voz a Audio
+6-QR generator *
+7-texto a voz
 
 
 Mismo idioma todo
