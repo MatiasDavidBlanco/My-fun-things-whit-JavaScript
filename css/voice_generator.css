@@ -1,0 +1,156 @@
+.voice_generator {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #151313;
+    border-radius: 50px;
+    padding: 50px;
+    font-family: 'Inter', sans-serif;
+    color: #FFFCFC;
+
+}
+.voice_generator *{
+   margin: 10px 0px 10px 0px;
+
+}
+
+.vg_title {
+    font-size: 40px;
+    line-height: 52px;
+    letter-spacing: 0.20em;
+    color: #FFFFFF;
+}
+
+.fa-regular {
+    color: #40C18B;
+}
+
+.voice_generator textarea {
+    background: #D9D9D9;
+    border-radius: 25px;
+    padding: 20px;
+    font-size: 15px;
+}
+
+.voices_container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.voices_container h2 {
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.voices_container select {
+    border-radius: 20px;
+    background-color: #D9D9D9;
+    padding: 5px;
+    outline: none;
+}
+
+.values_container {
+    display: flex;
+    justify-content: space-between
+}
+
+.values_container input {
+    width: 200px;
+    margin-left: 5px;
+}
+
+.rate_container,
+.pitch_container {
+    display: flex;
+    align-items: flex-end;
+}
+
+.btn_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.btn_container button {
+    width: 70px;
+    height: 70px;
+    background: #D9D9D9;
+    border: 5px solid #40C18B;
+    border-radius: 50px;
+    transition: all 0.2s ease;
+}
+.btn_container button:hover {
+    cursor: pointer;
+    border: 5px solid #607d8b;
+}
+
+.btn_container button:active {
+    cursor: pointer;
+    border: 5px solid #dbde3c;
+    width: 65px;
+    height: 65px;
+}
+
+
+.path_animado{
+    animation: myAnim 2s cubic-bezier(0.11, 0, 0.5, 0) 0s 1 normal none;
+    transform-origin: center;
+    transform-box: fill-box;
+    fill: #40C18B;
+}
+
+@keyframes myAnim {
+	0% {
+		animation-timing-function: ease-in;
+		opacity: 1;
+		transform: translateY(-45px);
+	}
+
+	24% {
+		opacity: 1;
+	}
+
+	40% {
+		animation-timing-function: ease-in;
+		transform: translateY(-24px);
+	}
+
+	65% {
+		animation-timing-function: ease-in;
+		transform: translateY(-12px);
+	}
+
+	82% {
+		animation-timing-function: ease-in;
+		transform: translateY(-6px);
+	}
+
+	93% {
+		animation-timing-function: ease-in;
+		transform: translateY(-4px);
+	}
+
+	25%,
+	55%,
+	75%,
+	87% {
+		animation-timing-function: ease-out;
+		transform: translateY(0px);
+	}
+
+	100% {
+		animation-timing-function: ease-out;
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
+
+@keyframes test{
+    from{
+        transform: scale(1.0);
+    }
+    to{
+        transform:  scale(1.5);
+    }
+}
+
