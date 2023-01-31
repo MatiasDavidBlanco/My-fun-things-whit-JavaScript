@@ -13,7 +13,8 @@ html{
   scroll-behavior: smooth;
 }
 body{
-    background: #343541
+  background: #343541;
+    
 }
 body>h1{
     color: #f8f8f8;
@@ -22,11 +23,11 @@ body>h1{
 }
 .wraper {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   flex-wrap: wrap;
   flex-direction: column;
   padding: 50px;
-  justify-content:space-around;
+  /* justify-content:space-around; */
   align-items: center;
 }
 

@@ -6,8 +6,9 @@ var synth = window.speechSynthesis;
 const voice_generator_container = document.getElementById("six");
 const texto = document.getElementById("text-input");
 const btn_generate_voice = document.querySelector(".btn_generate_voice");
+const btn_download_voice = document.querySelector(".btn_download_voice");
 const lista_voces = document.getElementById("voces");
-const onda_sonora = document.querySelector("#onda_sonora");
+const onda_sonora = document.querySelector(".onda_sonora_container");
 
 
 var pitch = document.querySelector('#pitch');
@@ -46,18 +47,23 @@ if (speechSynthesis.onvoiceschanged !== undefined) {
 
 
 btn_generate_voice.addEventListener("click",hablar);
+btn_download_voice.addEventListener("click",download_voice)
+
+
+
 
 function hablar(){
-   
+    
     if (!texto.value) {
-        animarOnda();
+        
         synth.speak(new SpeechSynthesisUtterance("Primero, ingrese un texto para pronunciar por favor"));
-        desanimarOnda();
+        animarOnda();
         return;
     }
-    animarOnda();
+    
     const hablar_esto = new SpeechSynthesisUtterance(texto.value);
-    desanimarOnda();
+    animarOnda();
+    
     // Se obtiene la voz que quiero utilizar
     const opcion_seleccionda = lista_voces.selectedOptions[0].getAttribute('data-name');
     // var selectedOption = voiceSelect.selectedOptions[0].getAttribute('data-name');
@@ -75,11 +81,11 @@ function hablar(){
     hablar_esto.rate = rate.value;
 
     //se produce la reproducción 
-    synth.speak(hablar_esto);
+    return synth.speak(hablar_esto);
 
 }
 
-//se modifica valore de cada input
+//se modifica valores de cada input
 
 pitch.onchange = function() {
     pitchValue.textContent = pitch.value;
@@ -91,19 +97,16 @@ rate.onchange = function() {
   
 //Función para animar onda sonora
 
+
+
 function animarOnda(){
-    for (let i=1; i<42; i++){
-        const path= document.getElementById("Vector_"+i)
-        path.classList.toggle("path_animado") 
+    for ( let i=1; i<=13; i++){
+        let a = document.getElementById("onda_item_"+i);
+        a.style.animationDelay= i / 6 + "s";
     }
 }
-   
-function desanimarOnda(){
-    console.log("desaniumando onda")
-    // for (let i=1; i<42; i++){
-    //     const path= document.getElementById("Vector_"+i)
-    //     path.classList.remove("path_animado") 
-    // }
+
+
+function download_voice (){
+    console.log("eee")
 }
-
-
