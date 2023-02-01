@@ -1,5 +1,6 @@
 .analog_clock{
     /* border: solid 3px #25d469; */
+    font-family: "Alegreya Sans", sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
