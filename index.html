@@ -25,23 +25,24 @@
 
 <body>
     <h1>Funny things whit JavaScript</h1>
+    <div id="one" class="hamburger_menu">
+        <button id="hamburger_btn" class="panel_btn hamburger hamburger--3dxy" type="button">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
+        <aside class="panel">
+            <nav class="menu">
+                <h1>Project's List</h1>
+                <a onclick="cerrarMenu()" href="#two">Colour Picker</a>
+                <a onclick="cerrarMenu()" href="#three">Analog clock</a>
+                <a onclick="cerrarMenu()" href="#four">Digital clock</a>
+                <a onclick="cerrarMenu()" href="#five">QR Code Generator</a>
+                <a onclick="cerrarMenu()" href="#six">Voice Generator</a>
+            </nav>
+        </aside>
+    </div>
     <div class="wraper">
-        <div id="one" class="hamburger_menu">
-            <button id="hamburger_btn" class="panel_btn hamburger hamburger--3dxy" type="button">
-                <span class="hamburger-box">
-                    <span class="hamburger-inner"></span>
-                </span>
-            </button>
-            <aside class="panel">
-                <nav class="menu">
-                    <h1>Project's List</h1>
-                    <a onclick="cerrarMenu()" href="#two">Colour Picker</a>
-                    <a onclick="cerrarMenu()" href="#three">Analog clock</a>
-                    <a onclick="cerrarMenu()" href="#four">Digital clock</a>
-                    <a onclick="cerrarMenu()" href="#five">QR Code Generator</a>
-                </nav>
-            </aside>
-        </div>
         <div id="two" class="section colour_picker"></div>
         <div id="three" class="section analog_clock"></div>
         <div id="four" class="section digital_clock"></div>

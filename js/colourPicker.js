@@ -1,5 +1,7 @@
 // Interacción 1 Colour picker
 
+window.addEventListener("load", desplegarPaleta)
+
 const paletaContainer = document.querySelector("#two");
 
 const titulo = document.createElement("h1");
